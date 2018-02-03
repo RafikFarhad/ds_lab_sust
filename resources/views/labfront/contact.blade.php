@@ -39,7 +39,7 @@
 
     <div class="row">
         <div class="col-lg-5 col-sm-5 address">
-            <h4>SUST NLP lab</h4>
+            <h4>SUST CSE Data Science Research Group </h4>
             <p>
 
                 Computer Science and Engineering Department, <br/>

@@ -24,7 +24,7 @@ class ResourceController extends Controller
     public function index()
     {
         $resources = Resource::orderBy('id', 'desc')->get();
-        return view('resource.index', compact('resources'))->with('title', "All Resource List");
+        return view('resource.index', compact('resources'))->with('title', " Resource List");
     }
 
     /**

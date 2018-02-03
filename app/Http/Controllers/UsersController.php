@@ -32,7 +32,7 @@ class UsersController extends Controller
             //->where('id','!=',1)
             ->get();
         return view('user.index', compact('user'))
-            ->with('title', 'All User List');
+            ->with('title', 'User List');
     }
 
 
@@ -47,7 +47,7 @@ class UsersController extends Controller
     {
         $user = User::where('status', 1)->where('is_teacher','=',0)->get();
         return view('user.student', compact('user'))
-            ->with('title', 'All Student List');
+            ->with('title', 'Student List');
     }
 
 
@@ -62,7 +62,7 @@ class UsersController extends Controller
     {
         $user = User::where('status', 1)->where('is_teacher','=',1)->orderBy('rank')->get();
         return view('user.teacher', compact('user'))
-            ->with('title', 'All Teacher List');
+            ->with('title', 'Faculty Member List');
     }
 
     public function teacherSort()
@@ -116,7 +116,7 @@ class UsersController extends Controller
     {
         $user = User::where('status', 1)->where('is_teacher','=',2)->get();
         return view('user.alumni', compact('user'))
-            ->with('title', 'All Alumni List');
+            ->with('title', ' Alumni List');
     }
 
 
@@ -131,7 +131,7 @@ class UsersController extends Controller
         $user = User::findOrFail($id);
         $user->is_teacher = 2;
         if($user->save()){
-            return redirect()->back()->with('success', 'User Successfully as a Alumni');
+            return redirect()->back()->with('success', 'User Successfully add as a Alumni');
         }
         else{
             return redirect()->back()->with('error', 'Something Went Wrong, Try Again');

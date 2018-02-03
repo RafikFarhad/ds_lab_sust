@@ -30,23 +30,9 @@ class LabFrontController extends Controller
     //Home PAGE
     /*==================================================*/
     public function index(){
-      
-       $event = Event::take(3)->orderBy('id','desc')->get();
 
-       // foreach ($event as $events) {
-       //   $today =Carbon::now()->formatLocalized('%m/%d/%Y'); //day date month year 
-       //      $format = "m/d/y";
-       //      $date1  = \DateTime::createFromFormat($format, $events->event_start);
-       //      $date2  = \DateTime::createFromFormat($format, $today);
-       //      var_dump($date1 > $date1) ;
-       // }
-       
-
-
-
-
+        $event = Event::where('event_end', '>=', date('Y-m-d'))->take(3)->orderBy('id','desc')->get();
         $news = News::take(3)->orderBy('id','desc')->get();
-
         $blog= Blog::take(4)->orderBy('id','desc')->get();
         $project= Project::take(5)->orderBy('id','desc')->get();
         $paper= Paper::take(5)->orderBy('id','desc')->get();
@@ -55,7 +41,7 @@ class LabFrontController extends Controller
         $welcome =Welcome::findOrFail(1);
 
         return view('labfront.index',compact('event','news','blog','project','paper','sliders','slider','welcome'))
-            ->with('title','Home | SUST CSE NLP Lab');
+            ->with('title','Home | SUST CSE Data Science Research Group');
     }
 
 
@@ -79,13 +65,8 @@ class LabFrontController extends Controller
         $recent= Blog::take(3)->orderBy('id','desc')->get(); //recent 3 news
         $blog = Blog::orderBy('id', 'desc')->paginate(5);
 
-        return view('labfront.blog', compact('blog','recent','tag'))->with('title',"Blog | NLP Lab ");
+        return view('labfront.blog', compact('blog','recent','tag'))->with('title',"Blog | SUST CSE Data Science Research Group ");
     }
-
-
-
-
-
 
 
 
@@ -136,7 +117,6 @@ class LabFrontController extends Controller
             return "Sorry, Page not Found ";
         }
     }
-
 
 
 
@@ -251,6 +231,9 @@ class LabFrontController extends Controller
     }
 
 
+
+
+
     public function userAffiliates(){
         $user = \DB::table('users')
             ->join('other_user', 'users.id', '=', 'other_user.user_id')
@@ -329,7 +312,7 @@ class LabFrontController extends Controller
                  ->where('status',1)
                  ->simplePaginate(5);
         $news = News::take(3)->orderBy('id','desc')->get();
-        return view('labfront.alumni',compact('user','news'))->with('title','Lab Alumni');
+        return view('labfront.alumni',compact('user','news'))->with('title','Group Alumni');
     }
 
 

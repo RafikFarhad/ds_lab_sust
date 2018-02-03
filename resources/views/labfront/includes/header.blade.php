@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Natural language Processing Group,
+    <meta name="description" content="Data Science Group,
     Computer Science and Engineering Department,
     Shahjalal University of Science and Technology, Sylhet.">
 	
@@ -15,10 +15,10 @@
 	 .....................
 	 -->
 	 
-    <meta name="author" content="NLP Group">
-    <meta name="keyword" content="Sust,Natarul Language Processing,Lab,NLP Group,Cse,Sylhet, 
+    <meta name="author" content="Data Science Group">
+    <meta name="keyword" content="Sust,Data Science Group,Cse,Sylhet,
     Event, News, Bangladesh, Award, Contest, Thesis
-    SUST NLP, sust nlp, nlp.sust.edu, 
+    SUST DS, sust ds, ds.sust.edu,
     ">
 
     {!! Html::favicon('favicon.ico') !!}

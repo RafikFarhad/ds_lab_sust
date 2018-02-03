@@ -1,7 +1,7 @@
 <!-- Footer Start -->
 <center>
 <footer class="footer">
-	Copyright &copy; NLP Lab, CSE , SUST, Sylhet, Bangladesh. All rights reserved.
+	Copyright &copy; Data Science Group, CSE , SUST, Sylhet, Bangladesh. All rights reserved.
 </footer>
 <!-- Footer Ends -->
 </center>

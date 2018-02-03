@@ -20,7 +20,7 @@ $date_time = date("F j, Y, g:i a");
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Mail From SUST NLP Research Group</title>
+    <title>Mail From SUST CSE Data Science Research Group</title>
 
 
     <style type="text/css">
@@ -94,7 +94,7 @@ $date_time = date("F j, Y, g:i a");
                     <table class="main" width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; background-color: #fff; margin: 0; border: 1px solid #e9e9e9;" bgcolor="#fff">
                         <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                             <td class="alert alert-warning" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background-color: #2f353f; margin: 0; padding: 20px;" align="center" bgcolor="#2f353f" valign="top">
-                                SUST NLP Research Group || Message From <?php echo ($email); ?>
+                                SUST CSE Data Science Research Group || Message From <?php echo ($email); ?>
                             </td>
                         </tr>
                         <tr style=" font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -116,7 +116,7 @@ $date_time = date("F j, Y, g:i a");
 
                                         <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                             <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                                <a href="{!! URL::route('labfront.index')!!}" class="btn btn-primary" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; cursor: pointer; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #6e8cd7; margin: 0; border-color: #6e8cd7; border-style: solid; border-width: 10px 20px;">NLP Research Group, CSE, SUST</a>
+                                                <a href="{!! URL::route('labfront.index')!!}" class="btn btn-primary" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-height: 2em; font-weight: bold; text-align: center; cursor: pointer; display: inline-block; border-radius: 5px; text-transform: capitalize; background-color: #6e8cd7; margin: 0; border-color: #6e8cd7; border-style: solid; border-width: 10px 20px;">Data Science Research Group, CSE, SUST</a>
                                             </td>
                                         </tr>
 

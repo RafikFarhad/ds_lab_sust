@@ -17,7 +17,7 @@ class ContactController extends Controller
 
     public function contact()
     {
-        return view('labfront.contact')->with('title',"Contact | NLP Lab");
+        return view('labfront.contact')->with('title',"Contact | Data Science Research Group");
     }
 
 
@@ -48,8 +48,8 @@ class ContactController extends Controller
             \Mail::send('emails.contact', $data, function($message) use ($data)
             {
                 //$user = User::findOrFail(1)->pluck('email');
-                $message->from($data['email'],'User email From SUST NLP Research Group');
-                $message->to('saif.acm@gmail.com')->cc('saif.acm@gmail.com')->subject('Your Reminder!');
+                $message->from($data['email'],'User email From SUST Data Science Research Group');
+                $message->to('sknabil@gmail.com')->cc('sknabil@gmail.com')->subject('Your Reminder!');
 
             });
 
@@ -57,7 +57,7 @@ class ContactController extends Controller
             return redirect()->back()->with('success','Your message has been sent');
         }else{
             //return contact form with errors
-            return \Redirect::to('contact')->withErrors($validator)->with('title','Contact | SUST NLP Research Group')->with('error','Something Went Wrong, Please Try Again');
+            return \Redirect::to('contact')->withErrors($validator)->with('title','Contact | Data Science Research Group')->with('error','Something Went Wrong, Please Try Again');
         }
     }
 
@@ -65,7 +65,7 @@ class ContactController extends Controller
 
 
     public function joinUs(){
-        return view('labfront.joinUs')->with('title',"Join Us | SUST NLP Research Group");
+        return view('labfront.joinUs')->with('title',"Join Us | SUST Data Science Research Group");
     }
 
 

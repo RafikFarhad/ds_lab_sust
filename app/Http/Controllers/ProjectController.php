@@ -21,7 +21,7 @@ class ProjectController extends Controller
     {
 
         $projects = Project::orderBy('id', 'desc')->get();
-        return view('project.index', compact('projects'))->with('title',"All Project List");
+        return view('project.index', compact('projects'))->with('title',"Project List");
     }
 
 

@@ -7,7 +7,7 @@
             <div class="k-breadcrumbs col-lg-12 clearfix">
                 <!-- breadcrumbs -->
                 <ol class="breadcrumb">
-                    <li><a href="{!! route('labfront.index') !!}">SUST CSE NLP Lab</a></li>
+                    <li><a href="{!! route('labfront.index') !!}">SUST CSE Data Science Research Group</a></li>
                     <li><a href="#">Login</a></li>
                 </ol>
             </div>
@@ -25,7 +25,7 @@
                 <div class="panel panel-default">
 
                     <div class="panel-heading">
-                        <h3 class="panel-title text-center"><b>LogIn into NLP Group, SUST</b></h3>
+                        <h3 class="panel-title text-center"><b>LogIn into <br> Data Science Research Group, SUST</b></h3>
                         @include('includes.alert')
                     </div>
                     <div class="panel-body">

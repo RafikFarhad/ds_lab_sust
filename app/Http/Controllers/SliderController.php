@@ -19,7 +19,7 @@ class SliderController extends Controller
      */
     public function index(){
         $sliders = Slider::orderBy('id', 'desc')->get();
-        return view('slider.index', compact('sliders'))->with('title',"All Slide List");
+        return view('slider.index', compact('sliders'))->with('title'," Slide List");
     }
 
 

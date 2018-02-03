@@ -22,7 +22,7 @@ class PaperController extends Controller
     {
 
         $papers = Paper::orderBy('id', 'desc')->get();
-        return view('paper.index', compact('papers'))->with('title',"All Paper List");
+        return view('paper.index', compact('papers'))->with('title',"Paper List");
     }
 
 

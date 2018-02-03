@@ -25,7 +25,7 @@ class BlogController extends Controller
     public function index()
     {
         $blog = Blog::orderBy('id', 'desc')->get();
-        return view('blog.index', compact('blog'))->with('title',"All Blog List");
+        return view('blog.index', compact('blog'))->with('title',"Blog List");
     }
 
 

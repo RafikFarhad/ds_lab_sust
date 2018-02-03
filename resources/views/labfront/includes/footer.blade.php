@@ -22,7 +22,7 @@
                                 <li><a href="https://www.facebook.com/sustcsesociety/" target="_blank" title="menu item">CSE Society, SUST</a></li>
                                 <li><a href="#"  target="_blank" title="menu item">Software House, SUST</a></li>
                                 <li><a href="#" target="_blank" title="menu item">ACM Lab, CSE, SUST</a></li>
-                                <li><a href="#" target="_blank" title="menu item">Data Science Lab, CSE, SUST</a></li>
+                                <li><a href="http://nlp.sust.edu" target="_blank" title="menu item">NLP Group, CSE, SUST</a></li>
                             </ul>
 
                         </li>
@@ -45,7 +45,7 @@
 
                             <div itemscope itemtype="#">
 
-                                <h2 class="title-median m-contact-subject" itemprop="name">SUST CSE Natural Language Processing (NLP) Group
+                                <h2 class="title-median m-contact-subject" itemprop="name">SUST CSE Data Science Research Group
                                 <div class="m-contact-address" itemprop="address" itemscope itemtype="#">
                                     <span class="m-contact-street" itemprop="street-address">IICT Building</span>
                                 
@@ -125,7 +125,7 @@
             <div class="col-lg-12">
 
                 <p class="copy-text text-inverse">
-                    &copy; <?php echo date("Y"); ?> . SUST Cse Natural Language Processing(NLP) Group, All rights reserved.
+                    &copy; <?php echo date("Y"); ?> . SUST CSE Data Science Research Group, All rights reserved.
                 </p>
 
             </div>

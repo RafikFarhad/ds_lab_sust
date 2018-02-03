@@ -22,7 +22,7 @@ class AwardController extends Controller
     {
         $award = Award::orderBy('id', 'desc')->get();
         //$award = AwardPeople::orderBy('id', 'desc')->get();
-        return view('award.index', compact('award'))->with('title',"All Award List");
+        return view('award.index', compact('award'))->with('title',"Award List");
     }
 
     /**
@@ -34,7 +34,7 @@ class AwardController extends Controller
     {
         $teacher = User::where('is_teacher',1)->lists('name','id');
         $student = User::where('is_teacher',0)->where('status',1)->lists('name','id');
-        return view('award.create',compact('teacher','student'))->with('title',"Create New Award");
+        return view('award.create',compact('teacher','student'))->with('title',"Add New Award");
     }
 
 
@@ -70,7 +70,7 @@ class AwardController extends Controller
                 $award->users()->attach($request->award_supervisor);
                 $award->users()->attach($request->award_developer);
 
-                return redirect()->back()->with('success', 'Award Successfully Created');
+                return redirect()->back()->with('success', 'Award Successfully Added');
 
             }else{
                 return redirect()->back()->with('error', 'Something went wrong, Please try again');

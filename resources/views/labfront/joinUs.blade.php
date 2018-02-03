@@ -38,7 +38,7 @@
 										Apply For Account
 									</button>
 								</a><br/><br/><br/>
-								<p>If you Already a part of SUST CSE NLP Lab</p>
+								<p>If you Already a part of SUST CSE Data Science Research Group</p>
 								<br/>
 								<a href="{!! route('login')!!}">
 									<button class="btn btn-danger btn-lg">

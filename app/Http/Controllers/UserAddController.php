@@ -172,11 +172,9 @@ class UserAddController extends Controller
                 ];
 
                 Mail::send('emails.teacherAdd', $datatopass, function ($m) use ($user) {
-                    $m->from('noreply@nlp.sust.edu', 'Membership At SUST NLP Research Group');
-
-                    $m->to($user->email, $user->name)->subject('Membership At SUST NLP Research Group!');
+                    $m->from('noreply@ds.sust.edu', 'Data Science !!');
+                    $m->to($user->email, $user->name)->subject('Membership At SUST CSE Data Science Research Group!');
                 });
-
 
                 return redirect()->route('auth.userAdd')
                     ->with('success', 'User Add Successfully and a Mail sent to him/her');
