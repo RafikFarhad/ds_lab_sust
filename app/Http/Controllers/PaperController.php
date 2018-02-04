@@ -183,6 +183,7 @@ class PaperController extends Controller
         $paper = Paper::findOrFail($id);
         $paper->paper_title = $request->paper_title;
         $paper->paper_details = $request->paper_details;
+        $paper->paper_type = $request->paper_type;
         $paper->paper_url = $request->paper_url;
         $paper->paper_cite = $request->paper_cite;
         $paper->publication_name = $request->publication_name;
